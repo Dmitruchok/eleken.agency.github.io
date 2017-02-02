@@ -3,8 +3,30 @@
   background-size: cover;
   form {
     text-align: center;
+    padding: 40px 0;
     span {
+      display: block;
+      color: #000;
+    }
 
+    h3 {
+      color: #fff;
+      font-family: 'Playfair Display';
+      font-size: 42px;
+      font-weight: normal;
+    }
+
+    input {
+      color: #fff;
+      background: rgba(255, 255, 255, 0);
+      background-image: url('../img/right-arrow.png');
+      background-repeat: no-repeat;
+      background-size: 7px 11px;
+      background-position: 95%;
+      outline: none;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      border-radius: 30px;
+      padding: 17px 120px 17px 40px;
     }
   }
 }

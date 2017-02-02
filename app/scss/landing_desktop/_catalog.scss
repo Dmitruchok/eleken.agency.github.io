@@ -1,5 +1,5 @@
 .catalog {
-
+  font-family: $catalog-font;
   .catalog-container {
     width: 80%;
     margin: 0 auto;
@@ -36,6 +36,7 @@
     }
 
     .assortment-block {
+      text-align: center;
       figure {
         display: inline-block;
         margin: 25px;
@@ -68,7 +69,6 @@
           }
         }
       }
-
     }
 
     .load {
@@ -77,6 +77,11 @@
       color: $head-color;
       text-align: center;
       margin: 50px;
+
+      &:hover {
+        color: #03a9f4;
+        font-weight: bold;
+      }
     }
   }
 }

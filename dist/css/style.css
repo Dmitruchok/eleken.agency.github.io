@@ -44,16 +44,57 @@ The `sprites` mixin generates identical output to the CSS template
 @include sprites($spritesheet-sprites);
 */
 @font-face {
-  font-family: 'GothaProBla';
+  font-family: 'Lato';
   font-style: normal;
-  src: url(../fonts/GothaProBla.otf) format("otf"); }
+  font-weight: 400;
+  src: local("Lato Regular"), url(../fonts/Lato.woff2) format("woff2"); }
 
 @font-face {
-  font-family: 'GothaProBla';
+  font-family: 'LatoBold';
   font-style: normal;
-  src: url(../fonts/GothaProBla.otf) format("otf"); }
+  font-weight: 700;
+  src: local("Lato Bold"), url(../fonts/LatoBold.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Playfair Display"), url(../fonts/PlayfairDisplay.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato Regular"), url(../fonts/Lato.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'LatoBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Lato Bold"), url(../fonts/LatoBold.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Playfair Display"), url(../fonts/PlayfairDisplay.woff2) format("woff2"); }
 
 @media (min-width: 414px) {
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Lato Regular"), url(../fonts/Lato.woff2) format("woff2"); }
+  @font-face {
+    font-family: 'LatoBold';
+    font-style: normal;
+    font-weight: 700;
+    src: local("Lato Bold"), url(../fonts/LatoBold.woff2) format("woff2"); }
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Playfair Display"), url(../fonts/PlayfairDisplay.woff2) format("woff2"); }
   .head-block {
     border-bottom: 1px solid #ededed;
     font-size: 11px; }
@@ -107,7 +148,8 @@ The `sprites` mixin generates identical output to the CSS template
           padding-right: 20px; }
   .wrapper {
     font-size: 11px;
-    color: #999999; }
+    color: #999999;
+    font-family: "LatoBold"; }
   .menu {
     border-bottom: 1px solid #ededed; }
     .menu .menu-container {
@@ -178,76 +220,104 @@ The `sprites` mixin generates identical output to the CSS template
               height: 15px; }
             .menu .menu-container ul .search a:hover {
               border-bottom: none; }
-  .catalog .catalog-container {
-    width: 80%;
-    margin: 0 auto; }
-    .catalog .catalog-container h2 {
-      font-size: 58px;
-      color: #000;
-      font-weight: normal;
-      text-align: center;
-      margin: 75px 0 25px; }
-    .catalog .catalog-container ul {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      width: 70%;
-      margin: 0 auto 30px;
-      padding: 0;
-      font-weight: bold; }
-      .catalog .catalog-container ul li {
-        list-style: none; }
-        .catalog .catalog-container ul li a {
-          display: block;
-          text-decoration: none;
-          border-bottom: 2px solid #fff;
-          color: #999999; }
-          .catalog .catalog-container ul li a:hover {
-            color: #000;
-            border-bottom: 2px solid #1b81d8; }
-    .catalog .catalog-container .assortment-block figure {
-      display: inline-block;
-      margin: 25px;
-      font-size: 16px; }
-      .catalog .catalog-container .assortment-block figure a {
-        display: block; }
-      .catalog .catalog-container .assortment-block figure figcaption {
+  .catalog {
+    font-family: "Playfair Display"; }
+    .catalog .catalog-container {
+      width: 80%;
+      margin: 0 auto; }
+      .catalog .catalog-container h2 {
+        font-size: 58px;
         color: #000;
+        font-weight: normal;
         text-align: center;
-        margin: 20px 0 5px 0; }
-      .catalog .catalog-container .assortment-block figure .price-block {
+        margin: 75px 0 25px; }
+      .catalog .catalog-container ul {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-        .catalog .catalog-container .assortment-block figure .price-block span {
-          display: block;
-          text-align: center;
-          padding-right: 10px; }
-        .catalog .catalog-container .assortment-block figure .price-block .through {
-          text-decoration: line-through; }
-        .catalog .catalog-container .assortment-block figure .price-block .red {
-          color: #fc411d; }
-    .catalog .catalog-container .load {
-      display: block;
-      text-decoration: none;
-      color: #999999;
-      text-align: center;
-      margin: 50px; }
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 70%;
+        margin: 0 auto 30px;
+        padding: 0;
+        font-weight: bold; }
+        .catalog .catalog-container ul li {
+          list-style: none; }
+          .catalog .catalog-container ul li a {
+            display: block;
+            text-decoration: none;
+            border-bottom: 2px solid #fff;
+            color: #999999; }
+            .catalog .catalog-container ul li a:hover {
+              color: #000;
+              border-bottom: 2px solid #1b81d8; }
+      .catalog .catalog-container .assortment-block {
+        text-align: center; }
+        .catalog .catalog-container .assortment-block figure {
+          display: inline-block;
+          margin: 25px;
+          font-size: 16px; }
+          .catalog .catalog-container .assortment-block figure a {
+            display: block; }
+          .catalog .catalog-container .assortment-block figure figcaption {
+            color: #000;
+            text-align: center;
+            margin: 20px 0 5px 0; }
+          .catalog .catalog-container .assortment-block figure .price-block {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            .catalog .catalog-container .assortment-block figure .price-block span {
+              display: block;
+              text-align: center;
+              padding-right: 10px; }
+            .catalog .catalog-container .assortment-block figure .price-block .through {
+              text-decoration: line-through; }
+            .catalog .catalog-container .assortment-block figure .price-block .red {
+              color: #fc411d; }
+      .catalog .catalog-container .load {
+        display: block;
+        text-decoration: none;
+        color: #999999;
+        text-align: center;
+        margin: 50px; }
+        .catalog .catalog-container .load:hover {
+          color: #03a9f4;
+          font-weight: bold; }
   .subscribe-block {
     background: url("../img/bg-subscribe.png") no-repeat;
     background-size: cover; }
     .subscribe-block form {
-      text-align: center; }
+      text-align: center;
+      padding: 40px 0; }
+      .subscribe-block form span {
+        display: block;
+        color: #000; }
+      .subscribe-block form h3 {
+        color: #fff;
+        font-family: 'Playfair Display';
+        font-size: 42px;
+        font-weight: normal; }
+      .subscribe-block form input {
+        color: #fff;
+        background: rgba(255, 255, 255, 0);
+        background-image: url("../img/right-arrow.png");
+        background-repeat: no-repeat;
+        background-size: 7px 11px;
+        background-position: 95%;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        -webkit-border-radius: 30px;
+                border-radius: 30px;
+        padding: 17px 120px 17px 40px; }
   footer .menu-foot-container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -261,13 +331,49 @@ The `sprites` mixin generates identical output to the CSS template
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     padding: 10px 0; }
     footer .menu-foot-container .logo {
-      display: block; } }
+      display: block; }
+    footer .menu-foot-container ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 0; }
+      footer .menu-foot-container ul li {
+        list-style: none;
+        margin: 20px; }
+        footer .menu-foot-container ul li a {
+          display: block;
+          text-decoration: none;
+          color: #000;
+          border-bottom: 2px solid #fff;
+          font-weight: bold; }
+          footer .menu-foot-container ul li a:hover {
+            border-bottom: 2px solid #1b81d8; } }
 
 @media (min-width: 668px) and (max-width: 768px) {
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Lato Regular"), url(../fonts/Lato.woff2) format("woff2"); }
+  @font-face {
+    font-family: 'LatoBold';
+    font-style: normal;
+    font-weight: 700;
+    src: local("Lato Bold"), url(../fonts/LatoBold.woff2) format("woff2"); }
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Playfair Display"), url(../fonts/PlayfairDisplay.woff2) format("woff2"); }
   .head-block {
     border-bottom: 1px solid #ededed;
     font-size: 11px; }
@@ -321,7 +427,8 @@ The `sprites` mixin generates identical output to the CSS template
           padding-right: 20px; }
   .wrapper {
     font-size: 11px;
-    color: #999999; }
+    color: #999999;
+    font-family: "LatoBold"; }
   .menu {
     border-bottom: 1px solid #ededed; }
     .menu .menu-container {
@@ -392,76 +499,104 @@ The `sprites` mixin generates identical output to the CSS template
               height: 15px; }
             .menu .menu-container ul .search a:hover {
               border-bottom: none; }
-  .catalog .catalog-container {
-    width: 80%;
-    margin: 0 auto; }
-    .catalog .catalog-container h2 {
-      font-size: 58px;
-      color: #000;
-      font-weight: normal;
-      text-align: center;
-      margin: 75px 0 25px; }
-    .catalog .catalog-container ul {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      width: 70%;
-      margin: 0 auto 30px;
-      padding: 0;
-      font-weight: bold; }
-      .catalog .catalog-container ul li {
-        list-style: none; }
-        .catalog .catalog-container ul li a {
-          display: block;
-          text-decoration: none;
-          border-bottom: 2px solid #fff;
-          color: #999999; }
-          .catalog .catalog-container ul li a:hover {
-            color: #000;
-            border-bottom: 2px solid #1b81d8; }
-    .catalog .catalog-container .assortment-block figure {
-      display: inline-block;
-      margin: 25px;
-      font-size: 16px; }
-      .catalog .catalog-container .assortment-block figure a {
-        display: block; }
-      .catalog .catalog-container .assortment-block figure figcaption {
+  .catalog {
+    font-family: "Playfair Display"; }
+    .catalog .catalog-container {
+      width: 80%;
+      margin: 0 auto; }
+      .catalog .catalog-container h2 {
+        font-size: 58px;
         color: #000;
+        font-weight: normal;
         text-align: center;
-        margin: 20px 0 5px 0; }
-      .catalog .catalog-container .assortment-block figure .price-block {
+        margin: 75px 0 25px; }
+      .catalog .catalog-container ul {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-        .catalog .catalog-container .assortment-block figure .price-block span {
-          display: block;
-          text-align: center;
-          padding-right: 10px; }
-        .catalog .catalog-container .assortment-block figure .price-block .through {
-          text-decoration: line-through; }
-        .catalog .catalog-container .assortment-block figure .price-block .red {
-          color: #fc411d; }
-    .catalog .catalog-container .load {
-      display: block;
-      text-decoration: none;
-      color: #999999;
-      text-align: center;
-      margin: 50px; }
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 70%;
+        margin: 0 auto 30px;
+        padding: 0;
+        font-weight: bold; }
+        .catalog .catalog-container ul li {
+          list-style: none; }
+          .catalog .catalog-container ul li a {
+            display: block;
+            text-decoration: none;
+            border-bottom: 2px solid #fff;
+            color: #999999; }
+            .catalog .catalog-container ul li a:hover {
+              color: #000;
+              border-bottom: 2px solid #1b81d8; }
+      .catalog .catalog-container .assortment-block {
+        text-align: center; }
+        .catalog .catalog-container .assortment-block figure {
+          display: inline-block;
+          margin: 25px;
+          font-size: 16px; }
+          .catalog .catalog-container .assortment-block figure a {
+            display: block; }
+          .catalog .catalog-container .assortment-block figure figcaption {
+            color: #000;
+            text-align: center;
+            margin: 20px 0 5px 0; }
+          .catalog .catalog-container .assortment-block figure .price-block {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            .catalog .catalog-container .assortment-block figure .price-block span {
+              display: block;
+              text-align: center;
+              padding-right: 10px; }
+            .catalog .catalog-container .assortment-block figure .price-block .through {
+              text-decoration: line-through; }
+            .catalog .catalog-container .assortment-block figure .price-block .red {
+              color: #fc411d; }
+      .catalog .catalog-container .load {
+        display: block;
+        text-decoration: none;
+        color: #999999;
+        text-align: center;
+        margin: 50px; }
+        .catalog .catalog-container .load:hover {
+          color: #03a9f4;
+          font-weight: bold; }
   .subscribe-block {
     background: url("../img/bg-subscribe.png") no-repeat;
     background-size: cover; }
     .subscribe-block form {
-      text-align: center; }
+      text-align: center;
+      padding: 40px 0; }
+      .subscribe-block form span {
+        display: block;
+        color: #000; }
+      .subscribe-block form h3 {
+        color: #fff;
+        font-family: 'Playfair Display';
+        font-size: 42px;
+        font-weight: normal; }
+      .subscribe-block form input {
+        color: #fff;
+        background: rgba(255, 255, 255, 0);
+        background-image: url("../img/right-arrow.png");
+        background-repeat: no-repeat;
+        background-size: 7px 11px;
+        background-position: 95%;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        -webkit-border-radius: 30px;
+                border-radius: 30px;
+        padding: 17px 120px 17px 40px; }
   footer .menu-foot-container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -475,13 +610,49 @@ The `sprites` mixin generates identical output to the CSS template
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     padding: 10px 0; }
     footer .menu-foot-container .logo {
-      display: block; } }
+      display: block; }
+    footer .menu-foot-container ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 0; }
+      footer .menu-foot-container ul li {
+        list-style: none;
+        margin: 20px; }
+        footer .menu-foot-container ul li a {
+          display: block;
+          text-decoration: none;
+          color: #000;
+          border-bottom: 2px solid #fff;
+          font-weight: bold; }
+          footer .menu-foot-container ul li a:hover {
+            border-bottom: 2px solid #1b81d8; } }
 
 @media (min-width: 1025px) {
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Lato Regular"), url(../fonts/Lato.woff2) format("woff2"); }
+  @font-face {
+    font-family: 'LatoBold';
+    font-style: normal;
+    font-weight: 700;
+    src: local("Lato Bold"), url(../fonts/LatoBold.woff2) format("woff2"); }
+  @font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Playfair Display"), url(../fonts/PlayfairDisplay.woff2) format("woff2"); }
   .head-block {
     border-bottom: 1px solid #ededed;
     font-size: 11px; }
@@ -535,7 +706,8 @@ The `sprites` mixin generates identical output to the CSS template
           padding-right: 20px; }
   .wrapper {
     font-size: 11px;
-    color: #999999; }
+    color: #999999;
+    font-family: "LatoBold"; }
   .menu {
     border-bottom: 1px solid #ededed; }
     .menu .menu-container {
@@ -606,76 +778,104 @@ The `sprites` mixin generates identical output to the CSS template
               height: 15px; }
             .menu .menu-container ul .search a:hover {
               border-bottom: none; }
-  .catalog .catalog-container {
-    width: 80%;
-    margin: 0 auto; }
-    .catalog .catalog-container h2 {
-      font-size: 58px;
-      color: #000;
-      font-weight: normal;
-      text-align: center;
-      margin: 75px 0 25px; }
-    .catalog .catalog-container ul {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -webkit-justify-content: space-between;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      width: 70%;
-      margin: 0 auto 30px;
-      padding: 0;
-      font-weight: bold; }
-      .catalog .catalog-container ul li {
-        list-style: none; }
-        .catalog .catalog-container ul li a {
-          display: block;
-          text-decoration: none;
-          border-bottom: 2px solid #fff;
-          color: #999999; }
-          .catalog .catalog-container ul li a:hover {
-            color: #000;
-            border-bottom: 2px solid #1b81d8; }
-    .catalog .catalog-container .assortment-block figure {
-      display: inline-block;
-      margin: 25px;
-      font-size: 16px; }
-      .catalog .catalog-container .assortment-block figure a {
-        display: block; }
-      .catalog .catalog-container .assortment-block figure figcaption {
+  .catalog {
+    font-family: "Playfair Display"; }
+    .catalog .catalog-container {
+      width: 80%;
+      margin: 0 auto; }
+      .catalog .catalog-container h2 {
+        font-size: 58px;
         color: #000;
+        font-weight: normal;
         text-align: center;
-        margin: 20px 0 5px 0; }
-      .catalog .catalog-container .assortment-block figure .price-block {
+        margin: 75px 0 25px; }
+      .catalog .catalog-container ul {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-            -ms-flex-pack: center;
-                justify-content: center; }
-        .catalog .catalog-container .assortment-block figure .price-block span {
-          display: block;
-          text-align: center;
-          padding-right: 10px; }
-        .catalog .catalog-container .assortment-block figure .price-block .through {
-          text-decoration: line-through; }
-        .catalog .catalog-container .assortment-block figure .price-block .red {
-          color: #fc411d; }
-    .catalog .catalog-container .load {
-      display: block;
-      text-decoration: none;
-      color: #999999;
-      text-align: center;
-      margin: 50px; }
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 70%;
+        margin: 0 auto 30px;
+        padding: 0;
+        font-weight: bold; }
+        .catalog .catalog-container ul li {
+          list-style: none; }
+          .catalog .catalog-container ul li a {
+            display: block;
+            text-decoration: none;
+            border-bottom: 2px solid #fff;
+            color: #999999; }
+            .catalog .catalog-container ul li a:hover {
+              color: #000;
+              border-bottom: 2px solid #1b81d8; }
+      .catalog .catalog-container .assortment-block {
+        text-align: center; }
+        .catalog .catalog-container .assortment-block figure {
+          display: inline-block;
+          margin: 25px;
+          font-size: 16px; }
+          .catalog .catalog-container .assortment-block figure a {
+            display: block; }
+          .catalog .catalog-container .assortment-block figure figcaption {
+            color: #000;
+            text-align: center;
+            margin: 20px 0 5px 0; }
+          .catalog .catalog-container .assortment-block figure .price-block {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                    justify-content: center; }
+            .catalog .catalog-container .assortment-block figure .price-block span {
+              display: block;
+              text-align: center;
+              padding-right: 10px; }
+            .catalog .catalog-container .assortment-block figure .price-block .through {
+              text-decoration: line-through; }
+            .catalog .catalog-container .assortment-block figure .price-block .red {
+              color: #fc411d; }
+      .catalog .catalog-container .load {
+        display: block;
+        text-decoration: none;
+        color: #999999;
+        text-align: center;
+        margin: 50px; }
+        .catalog .catalog-container .load:hover {
+          color: #03a9f4;
+          font-weight: bold; }
   .subscribe-block {
     background: url("../img/bg-subscribe.png") no-repeat;
     background-size: cover; }
     .subscribe-block form {
-      text-align: center; }
+      text-align: center;
+      padding: 40px 0; }
+      .subscribe-block form span {
+        display: block;
+        color: #000; }
+      .subscribe-block form h3 {
+        color: #fff;
+        font-family: 'Playfair Display';
+        font-size: 42px;
+        font-weight: normal; }
+      .subscribe-block form input {
+        color: #fff;
+        background: rgba(255, 255, 255, 0);
+        background-image: url("../img/right-arrow.png");
+        background-repeat: no-repeat;
+        background-size: 7px 11px;
+        background-position: 95%;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        -webkit-border-radius: 30px;
+                border-radius: 30px;
+        padding: 17px 120px 17px 40px; }
   footer .menu-foot-container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -689,8 +889,29 @@ The `sprites` mixin generates identical output to the CSS template
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
     padding: 10px 0; }
     footer .menu-foot-container .logo {
-      display: block; } }
+      display: block; }
+    footer .menu-foot-container ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 0; }
+      footer .menu-foot-container ul li {
+        list-style: none;
+        margin: 20px; }
+        footer .menu-foot-container ul li a {
+          display: block;
+          text-decoration: none;
+          color: #000;
+          border-bottom: 2px solid #fff;
+          font-weight: bold; }
+          footer .menu-foot-container ul li a:hover {
+            border-bottom: 2px solid #1b81d8; } }
