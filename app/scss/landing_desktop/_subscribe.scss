@@ -3,17 +3,19 @@
   background-size: cover;
   form {
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 0;
+    font-size: 12px;
     span {
       display: block;
-      color: #000;
+      color: #4c708a;
     }
 
     h3 {
       color: #fff;
       font-family: 'Playfair Display';
-      font-size: 42px;
+      font-size: 38px;
       font-weight: normal;
+      margin: 10px 0 20px;;
     }
 
     input {
@@ -22,11 +24,11 @@
       background-image: url('../img/right-arrow.png');
       background-repeat: no-repeat;
       background-size: 7px 11px;
-      background-position: 95%;
+      background-position: 93%;
       outline: none;
       border: 2px solid rgba(255, 255, 255, 0.4);
       border-radius: 30px;
-      padding: 17px 120px 17px 40px;
+      padding: 15px 130px 15px 30px;
     }
   }
 }

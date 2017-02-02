@@ -5,7 +5,7 @@ footer {
       justify-content: space-between;
       width: 75%;
       margin: 0 auto;
-      padding: 10px 0;
+      padding: 20px 0;
 
       .logo {
         display: block;
@@ -21,12 +21,11 @@ footer {
           a{
             display: block;
             text-decoration: none;
-            color: #000;
+            color: #333333;
             border-bottom: 2px solid #fff;
             font-weight: bold;
 
             &:hover {
-              // color: #000;
               border-bottom: 2px solid #1b81d8;
             }
           }

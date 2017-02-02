@@ -11,10 +11,17 @@
     font-weight: 700;
     src: local('Lato Bold'), url(../fonts/LatoBold.woff2) format('woff2');
   }
-  
+
 @font-face {
     font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 400;
     src: local('Playfair Display'), url(../fonts/PlayfairDisplay.woff2) format('woff2');
   }
+
+@font-face {
+  font-family: 'Playfair Display Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Playfair Display'), url(../fonts/PlayfairDisplayRegular.woff2) format('woff2');
+}
