@@ -1,0 +1,84 @@
+.menu {
+    border-bottom: 1px solid #ededed;
+
+  .menu-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+      padding: 10px 0;
+
+    .logo {
+      display: block;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      li {
+        list-style: none;
+        margin: 20px;
+        a {
+          display: block;
+          text-decoration: none;
+          color: $head-color;
+          border-bottom: 2px solid #fff;
+          font-weight: bold;
+
+          &:hover {
+            color: #000;
+            border-bottom: 2px solid #1b81d8;
+          }
+        }
+      }
+
+      .sale-link {
+        a {
+          color: #fc411d;
+        }
+      }
+
+      .bag {
+        margin-left: 100px;
+      }
+
+      .num-bag {
+        a {
+          border-bottom: none;
+          &::after {
+            display: block;
+            content: '';
+            background: url('../img/2.png') no-repeat;
+            background-size: 40px;
+            width: 41px;
+            height: 41px;
+          }
+
+          &:hover {
+            border-bottom: none;
+          }
+        }
+      }
+
+      .search {
+        margin: 0;
+        a {
+          border-bottom: none;
+          &::after {
+            display: block;
+            content: '';
+            background: url('../img/search.png') no-repeat;
+            background-size: 10px;
+            width: 15px;
+            height: 15px;
+          }
+
+          &:hover {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}
