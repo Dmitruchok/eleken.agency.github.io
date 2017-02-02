@@ -194,6 +194,9 @@ The `sprites` mixin generates identical output to the CSS template
               border-bottom: 2px solid #1b81d8; }
         .menu .menu-container ul .sale-link a {
           color: #fc411d; }
+          .menu .menu-container ul .sale-link a:hover {
+            color: #fc411d;
+            border-bottom: 2px solid #fc411d; }
         .menu .menu-container ul .bag {
           margin-left: 100px; }
         .menu .menu-container ul .num-bag a {
@@ -473,6 +476,9 @@ The `sprites` mixin generates identical output to the CSS template
               border-bottom: 2px solid #1b81d8; }
         .menu .menu-container ul .sale-link a {
           color: #fc411d; }
+          .menu .menu-container ul .sale-link a:hover {
+            color: #fc411d;
+            border-bottom: 2px solid #fc411d; }
         .menu .menu-container ul .bag {
           margin-left: 100px; }
         .menu .menu-container ul .num-bag a {
@@ -752,6 +758,9 @@ The `sprites` mixin generates identical output to the CSS template
               border-bottom: 2px solid #1b81d8; }
         .menu .menu-container ul .sale-link a {
           color: #fc411d; }
+          .menu .menu-container ul .sale-link a:hover {
+            color: #fc411d;
+            border-bottom: 2px solid #fc411d; }
         .menu .menu-container ul .bag {
           margin-left: 100px; }
         .menu .menu-container ul .num-bag a {

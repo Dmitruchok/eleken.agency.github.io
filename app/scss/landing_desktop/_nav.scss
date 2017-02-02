@@ -36,6 +36,11 @@
       .sale-link {
         a {
           color: #fc411d;
+
+          &:hover {
+            color: #fc411d;
+            border-bottom: 2px solid #fc411d;
+          }
         }
       }
 
