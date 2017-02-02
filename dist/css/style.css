@@ -91,7 +91,7 @@ The `sprites` mixin generates identical output to the CSS template
   font-weight: 400;
   src: local("Playfair Display"), url(../fonts/PlayfairDisplayRegular.woff2) format("woff2"); }
 
-@media (min-width: 414px) {
+@media (min-width: 414px) and (max-width: 668px) {
   @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -378,7 +378,25 @@ The `sprites` mixin generates identical output to the CSS template
           border-bottom: 2px solid #fff;
           font-weight: bold; }
           footer .menu-foot-container ul li a:hover {
-            border-bottom: 2px solid #1b81d8; } }
+            border-bottom: 2px solid #1b81d8; }
+  .menu-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .menu-container ul {
+      padding: 0; }
+  .menu-foot-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .menu-foot-container ul {
+      padding: 0; }
+  .catalog .catalog-container ul {
+    width: 100%; } }
 
 @media (min-width: 668px) and (max-width: 768px) {
   @font-face {
@@ -667,9 +685,27 @@ The `sprites` mixin generates identical output to the CSS template
           border-bottom: 2px solid #fff;
           font-weight: bold; }
           footer .menu-foot-container ul li a:hover {
-            border-bottom: 2px solid #1b81d8; } }
+            border-bottom: 2px solid #1b81d8; }
+  .menu-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .menu-container ul {
+      padding: 0; }
+  .menu-foot-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .menu-foot-container ul {
+      padding: 0; }
+  .catalog .catalog-container ul {
+    width: 100%; } }
 
-@media (min-width: 1025px) {
+@media (min-width: 768px) {
   @font-face {
     font-family: 'Lato';
     font-style: normal;
